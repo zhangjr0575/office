@@ -6,7 +6,7 @@
 
 ## 中文
 
-一个轻量级的 Office 文件预览与下载插件，支持 **PDF**、**Word（doc/docx）**、**Excel（xls/xlsx）** 文件在浏览器中的全屏预览和一键下载。无需依赖任何框架，开箱即用。
+Office 文件预览与下载插件，支持 **PDF**、**Word（doc/docx）**、**Excel（xls/xlsx）** 文件在浏览器中的全屏预览和一键下载。无复杂配置，开箱即用。
 
 ### 特性
 
@@ -129,7 +129,7 @@ download('https://example.com/report.xlsx', 'report.xlsx');
 
 ## English
 
-A lightweight Office file preview and download plugin for browsers. Supports fullscreen preview and one-click download for **PDF**, **Word (doc/docx)**, and **Excel (xls/xlsx)** files. Framework-agnostic and ready to use out of the box.
+An Office file preview and download plugin for browsers. Supports fullscreen preview and one-click download for **PDF**, **Word (doc/docx)**, and **Excel (xls/xlsx)** files. No complex configuration needed — ready to use out of the box.
 
 ### Features
 
