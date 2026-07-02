@@ -112,30 +112,6 @@ download('https://example.com/report.xlsx', 'report.xlsx');
 - [@js-preview/docx](https://www.npmjs.com/package/@js-preview/docx) — Word 文件预览
 - [@js-preview/excel](https://www.npmjs.com/package/@js-preview/excel) — Excel 文件预览
 
-### 在 Vue 3 中使用
-
-```vue
-<template>
-  <button @click="onPreview">预览文件</button>
-</template>
-
-<script setup>
-import { preview } from '@zhangjr0575/office';
-
-function onPreview() {
-  preview('https://example.com/sample.pdf');
-}
-</script>
-```
-
-项目内置了一个 Vue 3 示例，位于 `example/vue3/` 目录，可按如下方式运行：
-
-```bash
-cd example/vue3
-npm install
-npm run dev
-```
-
 ### 预览器操作
 
 预览器打开后，头部工具栏提供以下操作按钮：
@@ -258,30 +234,6 @@ This plugin is built on top of the following open-source libraries:
 - [@js-preview/pdf](https://www.npmjs.com/package/@js-preview/pdf) — PDF file preview
 - [@js-preview/docx](https://www.npmjs.com/package/@js-preview/docx) — Word file preview
 - [@js-preview/excel](https://www.npmjs.com/package/@js-preview/excel) — Excel file preview
-
-### Usage with Vue 3
-
-```vue
-<template>
-  <button @click="onPreview">Preview File</button>
-</template>
-
-<script setup>
-import { preview } from '@zhangjr0575/office';
-
-function onPreview() {
-  preview('https://example.com/sample.pdf');
-}
-</script>
-```
-
-A Vue 3 example is included in the `example/vue3/` directory. Run it with:
-
-```bash
-cd example/vue3
-npm install
-npm run dev
-```
 
 ### Previewer Controls
 
