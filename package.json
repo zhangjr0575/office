@@ -1,6 +1,6 @@
 {
   "name": "@zhangjr0575/office",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "office文件预览,下载",
   "main": "./src/index.js",
   "scripts": {
