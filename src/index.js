@@ -15,12 +15,12 @@ const defOptions = {
 window.__jsOfficePreview = { 
     defOptions, 
     download(evt) {
-        const base = window.__jsOfficePreview[evt.path[3].id];
+        const base = window.__jsOfficePreview[evt.path[evt.path[0].nodeName == 'svg' ? 3 : 4].id];
 
         download(base.src, base.options.fileName);
     },
     close(evt) {
-        const id = evt.path[3].id;
+        const id = evt.path[evt.path[0].nodeName == 'svg' ? 3 : 4].id;
             
         document.getElementById(id).remove();
         document.body.style.overflow = 'auto';
