@@ -1,20 +1,33 @@
 {
   "name": "@zhangjr0575/office",
   "version": "1.0.1",
-  "description": "office文件预览,下载",
+  "description": "Office file preview and download plugin for browser. Support PDF, Word (doc/docx), Excel (xls/xlsx) preview. | 浏览器端 Office 文件预览与下载插件，支持 PDF、Word、Excel 在线预览",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "office",
+    "office-preview",
+    "file-preview",
+    "document-preview",
+    "preview",
+    "download",
     "pdf",
+    "pdf-preview",
     "word",
-    "excel",
-    "xls",
     "doc",
     "docx",
-    "xlsx"
+    "excel",
+    "xls",
+    "xlsx",
+    "browser",
+    "online-preview",
+    "document",
+    "spreadsheet",
+    "js-preview",
+    "文件预览",
+    "在线预览"
   ],
   "author": "zhangjr0575",
   "license": "ISC",
