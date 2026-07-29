@@ -14,13 +14,13 @@ const defOptions = {
 
 window.__jsOfficePreview = { 
     defOptions, 
-    download(evt) {
-        const base = window.__jsOfficePreview[evt.path[evt.path[0].nodeName == 'svg' ? 3 : 4].id];
+    download() {
+        const base = window.__jsOfficePreview[window.__jsOfficePreview.id];
 
         download(base.src, base.options.fileName);
     },
-    close(evt) {
-        const id = evt.path[evt.path[0].nodeName == 'svg' ? 3 : 4].id;
+    close() {
+        const id = window.__jsOfficePreview.id;
             
         document.getElementById(id).remove();
         document.body.style.overflow = 'auto';
@@ -43,7 +43,7 @@ export async function preview(src, options = {}) {
     const _options = Object.assign({ fileName: decodeURIComponent(src.split('?')[0].split('/').pop()) }, defOptions, options);
     const _fileType = _options.fileName.split('.').pop().toLowerCase();
 
-    container.id = `jsOfficePreview_${Math.random().toString(36).substring(2)}`;
+    container.id = window.__jsOfficePreview.id = `jsOfficePreview_${Math.random().toString(36).substring(2)}`;
     container.style = `position:fixed;inset:0;z-index:9999;padding:${_options.headerHeight + _options.pageGap}px 0 ${_options.pageGap}px;overflow:auto;background-color:${_options.backgroundColor};`;
     container.innerHTML = `
         <div class="flex-row jsOfficePreview_header">
