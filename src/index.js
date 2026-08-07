@@ -105,11 +105,11 @@ export async function preview(src, options = {}) {
 function getStyleContent(options = {}) {
     return `
         .flex-row { display: flex; align-items: center; justify-content: space-between; }
-        .vue-office-pdf, .vue-office-docx { position: relative; height: auto!important; z-index: 10; }
+        .vue-office-pdf, .vue-office-docx { position: relative; z-index: 10; }
         .vue-office-excel { position: absolute; inset: ${options.headerHeight }px 0 0 0; z-index: 10; }
 
         .docx-wrapper, .vue-office-pdf-wrapper { padding: 0!important; background-color: ${options.backgroundColor}!important; }
-        .docx-wrapper .docx { box-shadow: none!important; margin-bottom: ${options.pageGap}px!important; }
+        .docx-wrapper .docx { box-shadow: none!important; margin-bottom: ${options.pageGap}px!important; padding: 0 30px; }
         .docx-wrapper .docx:last-child { margin-bottom: 0!important; }
 
         
